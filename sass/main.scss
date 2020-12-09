@@ -1,0 +1,72 @@
+@import "components/_vars.scss";
+@import "components/_mediaqueries.scss";
+
+@import "components/_nav.scss";
+@import "components/_footer.scss";
+@import 'components/_minicooper.scss';
+@import "components/_videoPlayer.scss";
+@import "components/_lightbox.scss"; 
+
+
+
+
+
+/*Main styles*/
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; 
+    background-color: $white;
+}
+
+/* Typography*/ 
+h2 {
+    color:$black;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h4 {
+    color: rgb(65, 65, 65);
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color: $white;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* layout */
+
+ul {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    font-size: 9px;
+    margin: 10px;
+
+    img { 
+        width: 300px; 
+        max-width: 100%; 
+    }
+}

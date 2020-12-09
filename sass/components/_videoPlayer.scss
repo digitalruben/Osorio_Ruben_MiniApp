@@ -1,0 +1,29 @@
+.video-player {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    video {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: normal;
+        color: $white;
+    }
+}
