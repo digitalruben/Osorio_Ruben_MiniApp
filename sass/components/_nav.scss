@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    border-bottom: 0.5px solid rgb(66, 66, 66);
+    padding-top: 8px;
+
+
+    .nav-container {
+        width: 90%;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .nav-container-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    
+        li {
+            margin-left: 2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $black;
+            font-weight: 500;
+        }
+
+        a:hover,
+        a:focus {
+            color: $orange;
+        }
+        
+    }
+}

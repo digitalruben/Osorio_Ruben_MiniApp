@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINICOOPER</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container nav-container-item">
+            <div class="site-logo">
+                <a href="./index.html" class="nav-current-page"><img src="./images/logo-avatar.png" width="100" alt="Nav logo"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">MODELS</a></li>
+                    <li><a href="#">OWNERS</a></li>
+                    <li><a href="#">DISCOVER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="containerBg">    </div>
+
+    <main id="app">
+        <div class="container-Lightbox">
+            <div class="container-lightbox-box">
+               <buttoncomponent v-for="item in mediaCollection" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
+            </div>
+            <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
+        </div>
+    </main>
+        
+    <footer class="footer">
+        <div class="nav-container nav-container-item">
+
+            <nav>
+                <ul>
+                    <li><a href="#">MODELS</a></li>
+                    <li><a href="#">OWNER</a></li>
+                    <li><a href="#">DISCOVER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
+</body>
+
+</html>
